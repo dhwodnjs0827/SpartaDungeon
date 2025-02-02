@@ -1,10 +1,13 @@
-﻿namespace SpartaDungeon
+﻿using SpartaDungeon.Manager;
+
+namespace SpartaDungeon
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            GameManager gameManager = GameManager.Instance;
+            gameManager.DrawScreen();
         }
     }
 }
